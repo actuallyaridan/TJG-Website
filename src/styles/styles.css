@@ -44,6 +44,15 @@ body {
     background-attachment: fixed;
 }
 
+img.emoji {
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+    pointer-events: none;
+  }
+  
+
 a {
     text-decoration: none;
 }
@@ -189,7 +198,7 @@ a {
     padding: 0;
 }
 
-/* Main Container for homepage in which logo and name is wrapped (index.html)*/
+/* Main Container for homepage in which logo and name is wrapped (index)*/
 .logo-container {
     display: flex;
     justify-content: center;
@@ -211,14 +220,14 @@ a {
     padding: 15%;
 }
 
-/* Heading Container (concepts.html, wallpapers.html, banners.html, contact.html) */
+/* Heading Container (concepts, wallpapers, banners, contact) */
 .heading {
     padding-top: 16%;
     text-align: center;
     margin: 0 auto;
 }
 
-/* Grid Container (concepts.html, wallpapers.html, banners.html, contact.html) */
+/* Grid Container (concepts, wallpapers, banners, contact) */
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -252,7 +261,7 @@ footer span {
     font-weight: bold;
 }
 
-/* Styles for Bluesky Icon (contact.html) */
+/* Styles for Bluesky Icon (contact) */
 .bluesky {
     width: 48px;
 }
@@ -261,7 +270,7 @@ footer span {
     fill: var(--accent);
 }
 
-/* 404 Page (404.html) */
+/* 404 Page (404) */
 .err-container {
     padding: 0 15%;
 }

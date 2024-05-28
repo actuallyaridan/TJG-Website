@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Skinner - Settings</title>
+    <meta name="title" content="Josh Skinner - Settings">
+    <meta name="description" content="Get in touch with me">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thatjoshguy.me/Settings">
+    <meta property="og:title" content="Josh Skinner - Settings">
+    <meta property="og:description" content="Get in touch with me">
+    <meta property="og:image" content="https://thatjoshguy.me/src/images/preview.png">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="thatjoshguy">
+    <meta name="twitter:url" content="https://thatjoshguy.me/Settings">
+    <meta name="twitter:creator" content="@thatjoshguy69">
+    <meta name="twitter:title" content=" Josh Skinner - Settings">
+    <meta name="twitter:description" content="Get in touch with me">
+    <meta name="twitter:image" content="https://thatjoshguy.me/src/images/preview.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- FontShare -->
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@600,400&display=swap" rel="stylesheet">
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/src/styles/styles.css">
+    <link rel="stylesheet" href="/src/styles/settings.css">
+    <link rel="stylesheet" href="/src/scripts/settings.js">
+    <link rel="stylesheet" href="/src/styles/cards.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+    <script src="/src/scripts/twemojiFix.js"></script>
+
+</head>
+
+<body>
+    <!-- Sidebar (Only visible in Bigger Screens including Desktops, etc) -->
+    <div class="sidebar">
+        <h4>That Josh Guy</h4>
+        <!-- Hyperlinks -->
+        <ul class="list-group">
+            <li class="list-group-item" data-href="/index"><i class="fa-solid fa-house icon pr-4"></i>Home</li>
+            <li class="list-group-item" data-href="/work/concepts"><i
+                    class="fa-solid fa-briefcase icon pr-5"></i>Work</li>
+            <li class="list-group-item" data-href="/shop"><i class="fa solid fa-bag-shopping" pr-5></i>⠀Shop</li>
+            <li class="list-group-item pl-1" data-href="/contact"><i class="fa-solid fa-user icon pr-5"></i>Contact
+            </li>
+            <li class="list-group-item pl-1 active" data-href="/settings"><i
+                    class="fa-solid fa-cog icon pr-5"></i>Settings</li>
+        </ul>
+    </div>
+
+    <!-- NavPill (Only Visible for Smaller Screens including Mobiles, Tabllets, etc) -->
+    <ul class="nav nav-pills nav-fill gap-2 p-1 small fixed-bottom custom-nav scroller">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" href="/index" role="tab" aria-selected="false">Home</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" href="/work/concepts" role="tab" aria-selected="false">Work</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" href="/shop" role="tab" aria-selected="false">Shop</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" href="/contact" role="tab" aria-selected="false">Contact</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" href="/settings" role="tab" aria-selected="True">Settings</a>
+        </li>
+    </ul>
+
+    <!-- WebPage Content -->
+    <div class="content">
+        <div class="section heading">
+            <h1>Settings</h1>
+            <br>
+        </div>
+
+        <!-- Grid For Placing the Cards -->
+        <section class="grid">
+            <form id="settings" action="/src/scripts/settings.js">
+                <section class="settingGroup" id="appearance">
+                    <div class="setting">
+                        <ul>
+                            <li>
+                                <h5>🎨<br>Theme</h5>
+                                <div>
+                                    <input type="radio" id="auto" name="theme-color" value="auto" class="theme-option"
+                                        checked>
+                                    <label for="auto" class="auto button theme-label">Follow system</label>
+
+                                    <input type="radio" id="light" name="theme-color" value="light"
+                                        class="theme-option">
+                                    <label for="light" class="light button theme-label">Light</label>
+
+                                    <input type="radio" id="dark" name="theme-color" value="dark" class="theme-option">
+                                    <label for="dark" class="dark button theme-label">Dark</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </form>
+        </section>
+
+        <div class="empty"></div>
+
+        <footer>
+            <div class="divider">⠀</div>
+            <br>
+            <h6 class="px-4">Designed By <a href="https://thatjoshguy.me/snake" target="_blank"
+                    rel="noopener noreferrer" target="_blank">That Josh Guy</a> & Developed by <a
+                    href="https://bit.ly/dhirensculpts" target="_blank" rel="noopener noreferrer" target="_blank">Dhiren
+                    Vasnani</a></h6><br>
+            <h6 class="px-4">Protected by the <a href="" target="_blank" rel="noopener noreferrer">MIT License</a></h6>
+        </footer>
+        <div class="empty"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="/src/scripts/manageUrl.js"></script>
+</body>
+
+</html>
